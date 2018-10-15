@@ -1,12 +1,12 @@
 ### Identify the problem and start debugging
 When you run into Core Data threading crash bug, it will look like this
-https://oleb.net/media/xcode-core-data-multithreading-violation.png
+<img src="https://oleb.net/media/xcode-core-data-multithreading-violation.png" width="50%">
 
 The debugger halts at `+[NSManagedObjectContext __Multithreading_Violation_AllThatIsLeftToUsIsHonor__]:`.
 
 Turn on the core data concurrency debugging flag, otherwise you won't run into this when debugging everytime.
 `-com.apple.CoreData.ConcurrencyDebug 1`
-https://oleb.net/media/xcode-scheme-core-data-concurrency-debug.png
+<img src="https://oleb.net/media/xcode-scheme-core-data-concurrency-debug.png" width="50%">
 
 ### Understand Core Data threading
 In Apple [official document](https://developer.apple.com/documentation/coredata/using_core_data_in_the_background?language=objc):
